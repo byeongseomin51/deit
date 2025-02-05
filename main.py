@@ -28,7 +28,7 @@ import models_v2
 
 import utils
 
-
+from mbs.deit.eval_main import my_main
 def get_args_parser():
     parser = argparse.ArgumentParser('DeiT training and evaluation script', add_help=False)
     parser.add_argument('--batch-size', default=64, type=int)
@@ -486,4 +486,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.output_dir:
         Path(args.output_dir).mkdir(parents=True, exist_ok=True)
-    main(args)
+    my_main(args)
+    # main(args)
