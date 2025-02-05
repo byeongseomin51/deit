@@ -1,0 +1,10 @@
+ 
+conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
+pip install timm==0.3.2
+
+근데 이러면 pytorch 랑 호환성이... 
+
+==================
+conda install pytorch=1.9.1 torchvision=0.10.1 cudatoolkit=10.2 -c pytorch
+pip install numpy==1.26.4
+pip install timm==0.4.12

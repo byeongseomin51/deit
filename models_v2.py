@@ -9,7 +9,8 @@ from timm.models.vision_transformer import Mlp, PatchEmbed , _cfg
 
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 from timm.models.registry import register_model
-
+# import timm
+# assert timm.__version__ == "0.3.2"
 class Attention(nn.Module):
     # taken from https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
     def __init__(self, dim, num_heads=8, qkv_bias=False, qk_scale=None, attn_drop=0., proj_drop=0.):
